@@ -5,7 +5,7 @@ module.exports = {
         swap16: true
     },
     mqtt: {
-        url: 'mqtt://test.mosquitto.org',
+        url: 'mqtt://mqtt',
         prefix: 'dialogflow-asterisk'
     },
     // used for playing back audio to asterisk
@@ -19,8 +19,8 @@ module.exports = {
         rtpPayloadType: 11
     },
   dialogflow: {
-      apiEndpoint: 'api-endpoint',
       auth: {
+          apiEndpoint: 'us-east1-dialogflow.googleapis.com',
           //credentials: {
           //     private_key: response.dialogFlowPrivateKey,
           //     client_email: response.dialogFlowClientEmail
@@ -29,7 +29,7 @@ module.exports = {
       },
       agentId: 'agent-id',
       project: 'project-id',
-      location: 'location',
+      location: 'us-east1',
       initialEventName: 'WELCOME',
       enableOutputSpeech: true,
       audioInputConfig: {
@@ -41,17 +41,6 @@ module.exports = {
       audioOutputConfig: {
           audioEncoding: 'OUTPUT_AUDIO_ENCODING_LINEAR_16',
           sampleRateHertz: 8000, // should be the same as dialogFlowAudioInputConfig.sampleRateHertz but Asterisk doesnt like 16000 back
-          /*
-            comment the below object if you dont want to change any aspects of the generated voice
-           */
-          synthesizeSpeechConfig: {
-              speakingRate: 1,
-              pitch: 5,
-              volumeGainDb: 0,
-              voice: {
-                  ssmlGender: `SSML_VOICE_GENDER_FEMALE`
-              }
-          }
       }
   }
 }
