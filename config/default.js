@@ -19,6 +19,7 @@ module.exports = {
         rtpPayloadType: 11
     },
   dialogflow: {
+      apiEndpoint: 'us-east1-dialogflow.googleapis.com',
       auth: {
           apiEndpoint: 'us-east1-dialogflow.googleapis.com',
           //credentials: {
