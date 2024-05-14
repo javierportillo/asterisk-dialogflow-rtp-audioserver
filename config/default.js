@@ -26,10 +26,10 @@ module.exports = {
           //     private_key: response.dialogFlowPrivateKey,
           //     client_email: response.dialogFlowClientEmail
           //   }
-          keyFilename: `./path-to-json.json`,
+          keyFilename: `./config/nurul-beck-0306fc703782.json`,
       },
-      agentId: 'agent-id',
-      project: 'project-id',
+      agentId: '53072a3a-bece-424f-b2ca-9bd7ad06655f',
+      project: 'nurul-beck',
       location: 'us-east1',
       initialEventName: 'WELCOME',
       enableOutputSpeech: true,
