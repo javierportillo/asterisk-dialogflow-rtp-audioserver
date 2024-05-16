@@ -22,10 +22,6 @@ module.exports = {
       apiEndpoint: 'us-east1-dialogflow.googleapis.com',
       auth: {
           apiEndpoint: 'us-east1-dialogflow.googleapis.com',
-          //credentials: {
-          //     private_key: response.dialogFlowPrivateKey,
-          //     client_email: response.dialogFlowClientEmail
-          //   }
           keyFilename: `./config/nurul-beck-0306fc703782.json`,
       },
       agentId: '53072a3a-bece-424f-b2ca-9bd7ad06655f',
