@@ -20,7 +20,8 @@
     "pino": "^5.14.0"
   },
   "devDependencies": {
-    "pino-pretty": "^3.6.1"
+    "pino-pretty": "^3.6.1",
+    "prettier": "^3.2.5"
   },
   "scripts": {
     "start": "node index.js",
