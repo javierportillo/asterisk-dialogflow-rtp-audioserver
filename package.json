@@ -11,7 +11,7 @@
   "license": "MIT",
   "private": false,
   "dependencies": {
-    "@google-cloud/dialogflow-cx": "^2.13.0",
+    "@google-cloud/dialogflow-cx": "^4.7.0",
     "async-mqtt": "^2.4.2",
     "config": "^3.2.4",
     "dgram-as-promised": "^3.0.3",
