@@ -33,11 +33,18 @@ module.exports = {
           audioEncoding: 'AUDIO_ENCODING_LINEAR_16',
           sampleRateHertz: 16000,
           languageCode: 'en',
-          singleUtterance: false
+          singleUtterance: false,
+          model: 'command_and_search',
+          modelVariant: 'USE_BEST_AVAILABLE',
       },
       audioOutputConfig: {
           audioEncoding: 'OUTPUT_AUDIO_ENCODING_LINEAR_16',
           sampleRateHertz: 8000, // should be the same as dialogFlowAudioInputConfig.sampleRateHertz but Asterisk doesnt like 16000 back
-      }
-  }
+          synthesizeSpeechConfig: {
+              voice: {
+                  name: 'es-US-Standard-B',
+          },
+        },
+      },
+  },
 }
