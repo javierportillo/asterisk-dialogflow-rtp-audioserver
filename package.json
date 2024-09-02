@@ -20,6 +20,8 @@
     "pino": "^5.14.0"
   },
   "devDependencies": {
+    "@types/config": "^3.3.4",
+    "@types/pino": "^7.0.5",
     "pino-pretty": "^3.6.1",
     "prettier": "^3.2.5"
   },
